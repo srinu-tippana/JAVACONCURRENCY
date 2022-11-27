@@ -27,7 +27,7 @@ public class UserService {
 	}
 	public static String birthDate(int UserId) {
 		Date birthDate = birthDateFromDB(UserId);
-		// Here we are calling the ThreadSafeFormatter
+		
 		final SimpleDateFormat df = ThreadSafeFormatter.dateFormatter.get();
 		
 		return df.format(birthDate);
@@ -43,7 +43,6 @@ public class UserService {
 
 class ThreadSafeFormatter{
 	
-	//java 8 coonvention to make threadsafe dateFormatter
 	public static ThreadLocal<SimpleDateFormat> dateFormatter  = ThreadLocal.withInitial(()-> new SimpleDateFormat("yyyy-MM-dd"));
 	
 	
