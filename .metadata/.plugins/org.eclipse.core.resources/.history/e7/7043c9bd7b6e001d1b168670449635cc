@@ -1,0 +1,23 @@
+package com.enhance.Thread;
+
+/* This class describes about  on a web server how different services can know the user
+ and how to make the user acessible to everyone*/
+public class UserContextHolder {
+
+	public static ThreadLocal<User> holder = new ThreadLocal();
+}
+class User
+{
+	
+}
+class Service1{
+	
+	public void process() {
+		User user = getUser();
+	}
+
+	private User getUser() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}
