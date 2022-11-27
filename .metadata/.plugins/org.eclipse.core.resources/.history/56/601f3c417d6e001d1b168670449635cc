@@ -32,7 +32,6 @@ class Service2{
 }
 
 class Service4{
-	//To clean the UserContext
 	public void process() {
 		UserContextHolder.holder.remove();
 	}

@@ -30,10 +30,3 @@ class Service2{
 		User user = UserContextHolder.holder.get();
 	}
 }
-
-class Service4{
-	//To clean the UserContext
-	public void process() {
-		UserContextHolder.holder.remove();
-	}
-}
