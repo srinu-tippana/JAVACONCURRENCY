@@ -1,0 +1,16 @@
+package com.enhance.Thread;
+
+import java.sql.Date;
+
+public class UserService {
+
+	public static void main(String[] args)
+	{
+		new Thread(()->{
+			String birthDate = UserService.birthDate(100);
+		}).start();
+	}
+	public static String birthDate(int UserId) {
+		Date birthDate = birthDateFromDB(UserID);
+	}
+}

@@ -1,0 +1,11 @@
+package com.enhance.Thread;
+
+public class UserService {
+
+	public static void main(String[] args)
+	{
+		new Thread(()->{
+			
+		}).start();
+	}
+}

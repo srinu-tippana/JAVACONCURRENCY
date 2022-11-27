@@ -1,0 +1,23 @@
+package com.enhance.Thread;
+
+import java.sql.Date;
+import java.time.LocalDate;
+
+public class UserService {
+
+	public static void main(String[] args)
+	{
+		new Thread(()->{
+			String birthDate = UserService.birthDate(100);
+		}).start();
+	}
+	public static String birthDate(int UserId) {
+		Date birthDate = birthDateFromDB(UserId);
+	}
+	private static Date birthDateFromDB(int userId) {
+		// TODO Auto-generated method stub
+		
+		Date myObj = new Date();
+		 return myObj;
+	}
+}
